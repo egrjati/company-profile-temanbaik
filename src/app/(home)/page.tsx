@@ -9,7 +9,7 @@ export default function HomePage() {
 
       {/* Main Content */}
       <main>
-        <h1 className=" mt-16 text-center text-black font-bold text-3xl">
+        <h1 className=" mt-16 text-center text-[#213F9A] font-bold text-3xl">
           Program Kami
         </h1>
 
@@ -17,24 +17,24 @@ export default function HomePage() {
         <BerbagiMengubahKehidupan />
 
         {/* Benner */}
-        <div className="w-full h-125 bg-gray-300 flex items-center justify-center p-4 mt-10">
-          <p className="text-black font-bold text-lg">Benner</p>
+        <div className="w-full h-125 bg-[#213F9A] flex items-center justify-center p-4 mt-10">
+          <p className="text-white font-bold text-lg">Benner</p>
         </div>
 
         {/* Mitra */}
-        <section className="py-16 px-4 sm:px-8 lg:px-16 bg-gray-50">
+        <section className="py-16 px-4 sm:px-8 lg:px-16 bg-[#EEF3FF]">
           <div className="max-w-6xl mx-auto">
 
             {/* Heading */}
             <div className="text-center mb-12">
-              <p className="text-[#278dcd] font-semibold text-sm uppercase tracking-widest mb-2">
+              <p className="text-[#02A6E0] font-semibold text-sm uppercase tracking-widest mb-2">
                 Jaringan Kami
               </p>
-              <h2 className="text-gray-800 font-bold text-3xl mb-3">Mitra Kami</h2>
+              <h2 className="text-[#213F9A] font-bold text-3xl mb-3">Mitra Kami</h2>
               <p className="text-gray-500 text-sm max-w-md mx-auto">
                 Bersama mitra terpercaya, kami terus bergerak mewujudkan kebaikan yang nyata.
               </p>
-              <div className="w-12 h-1 bg-[#278dcd] mx-auto mt-4 rounded-full" />
+              <div className="w-12 h-1 bg-[#02A6E0] mx-auto mt-4 rounded-full" />
             </div>
 
             {/* Grid logo mitra */}
@@ -42,10 +42,10 @@ export default function HomePage() {
               {Array.from({ length: 24 }).map((_, i) => (
                 <div
                   key={i}
-                  className="bg-white rounded-2xl border border-gray-100 shadow-sm h-20 flex items-center justify-center hover:shadow-md hover:border-[#278dcd]/40 hover:scale-105 transition-all duration-300 cursor-pointer group"
+                  className="bg-white rounded-2xl border border-gray-100 shadow-sm h-20 flex items-center justify-center hover:shadow-md hover:border-[#02A6E0]/40 hover:scale-105 transition-all duration-300 cursor-pointer group"
                 >
                   {/* Placeholder logo — ganti dengan <Image> saat aset siap */}
-                  <div className="w-16 h-8 bg-gray-200 rounded group-hover:bg-[#278dcd]/10 transition-colors duration-300" />
+                  <div className="w-16 h-8 bg-gray-200 rounded group-hover:bg-[#02A6E0]/10 transition-colors duration-300" />
                 </div>
               ))}
             </div>
@@ -56,7 +56,7 @@ export default function HomePage() {
         {/* Berita */}
         <section className="mb-10">
           <div className="w-full py-8 px-4 sm:px-8 lg:px-16">
-            <h2 className="text-[#278dcd] text-center font-bold text-3xl mb-6">
+            <h2 className="text-[#213F9A] text-center font-bold text-3xl mb-6">
               BERITA TERBARU
             </h2>
 
@@ -68,7 +68,7 @@ export default function HomePage() {
               <div className="flex-1 p-6 bg-white flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-center mb-3">
-                    <span className="text-[#278dcd] font-semibold text-sm">Berita</span>
+                    <span className="text-[#02A6E0] font-semibold text-sm">Berita</span>
                     <span className="text-gray-400 text-sm">16 Apr 2026</span>
                   </div>
                   <h3 className="text-gray-800 font-bold text-xl mb-3 leading-snug">
@@ -81,7 +81,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="flex justify-end mt-4">
-                  <button className="w-8 h-8 rounded-full bg-[#278dcd] text-white flex items-center justify-center text-lg leading-none">
+                  <button className="w-8 h-8 rounded-full bg-[#213F9A] text-white flex items-center justify-center text-lg leading-none">
                     ›
                   </button>
                 </div>
@@ -95,7 +95,7 @@ export default function HomePage() {
                 <div className="h-36 bg-gray-400 flex-shrink-0" />
                 <div className="p-3 flex flex-col flex-1">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="text-[#278dcd] font-semibold text-xs">Aksi</span>
+                    <span className="text-[#02A6E0] font-semibold text-xs">Aksi</span>
                     <span className="text-gray-400 text-xs">15 April 2026</span>
                   </div>
                   <h4 className="text-gray-800 font-bold text-sm leading-snug mb-2">
@@ -105,7 +105,7 @@ export default function HomePage() {
                     Sahabat Inisiator, berqurban bukan sekadar ibadah tahunan, melainkan juga cara nyata berbagi langsung ke lokasi pelosok.
                   </p>
                   <div className="flex justify-end mt-2">
-                    <button className="w-6 h-6 rounded-full bg-[#278dcd] text-white flex items-center justify-center text-sm leading-none">
+                    <button className="w-6 h-6 rounded-full bg-[#213F9A] text-white flex items-center justify-center text-sm leading-none">
                       ›
                     </button>
                   </div>
@@ -117,7 +117,7 @@ export default function HomePage() {
                 <div className="h-36 bg-gray-400 flex-shrink-0" />
                 <div className="p-3 flex flex-col flex-1">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="text-[#278dcd] font-semibold text-xs">Aksi</span>
+                    <span className="text-[#02A6E0] font-semibold text-xs">Aksi</span>
                     <span className="text-gray-400 text-xs">15 April 2026</span>
                   </div>
                   <h4 className="text-gray-800 font-bold text-sm leading-snug mb-2">
@@ -127,7 +127,7 @@ export default function HomePage() {
                     Banjir yang melanda wilayah Sumatera pada akhir November 2025 membawa dampak serius bagi ribuan warga.
                   </p>
                   <div className="flex justify-end mt-2">
-                    <button className="w-6 h-6 rounded-full bg-[#278dcd] text-white flex items-center justify-center text-sm leading-none">
+                    <button className="w-6 h-6 rounded-full bg-[#213F9A] text-white flex items-center justify-center text-sm leading-none">
                       ›
                     </button>
                   </div>
@@ -139,7 +139,7 @@ export default function HomePage() {
                 <div className="h-36 bg-gray-400 flex-shrink-0" />
                 <div className="p-3 flex flex-col flex-1">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="text-[#278dcd] font-semibold text-xs">Aksi</span>
+                    <span className="text-[#02A6E0] font-semibold text-xs">Aksi</span>
                     <span className="text-gray-400 text-xs">14 April 2026</span>
                   </div>
                   <h4 className="text-gray-800 font-bold text-sm leading-snug mb-2">
@@ -149,7 +149,7 @@ export default function HomePage() {
                     Pemerataan gizi masih menjadi pekerjaan rumah besar bagi Indonesia, khususnya soal akses protein hewani.
                   </p>
                   <div className="flex justify-end mt-2">
-                    <button className="w-6 h-6 rounded-full bg-[#278dcd] text-white flex items-center justify-center text-sm leading-none">
+                    <button className="w-6 h-6 rounded-full bg-[#213F9A] text-white flex items-center justify-center text-sm leading-none">
                       ›
                     </button>
                   </div>
@@ -161,7 +161,7 @@ export default function HomePage() {
                 <div className="h-36 bg-gray-400 flex-shrink-0" />
                 <div className="p-3 flex flex-col flex-1">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="text-[#278dcd] font-semibold text-xs">Berita</span>
+                    <span className="text-[#02A6E0] font-semibold text-xs">Berita</span>
                     <span className="text-gray-400 text-xs">14 April 2026</span>
                   </div>
                   <h4 className="text-gray-800 font-bold text-sm leading-snug mb-2">
@@ -171,7 +171,7 @@ export default function HomePage() {
                     Menjelang Iduladha, kita bisa memperkuat partisipasi di berbagai program qurban yang menjangkau daerah terpencil.
                   </p>
                   <div className="flex justify-end mt-2">
-                    <button className="w-6 h-6 rounded-full bg-[#278dcd] text-white flex items-center justify-center text-sm leading-none">
+                    <button className="w-6 h-6 rounded-full bg-[#213F9A] text-white flex items-center justify-center text-sm leading-none">
                       ›
                     </button>
                   </div>
