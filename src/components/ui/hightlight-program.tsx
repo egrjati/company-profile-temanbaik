@@ -71,7 +71,7 @@ export default function BerbagiMengubahKehidupan() {
           </p>
           <a
             href="#"
-            className="font-semibold text-xs sm:text-sm text-black mt-4 inline-block border-b-2 border-[#7FC248] pb-0.5 hover:text-[#7FC248] transition-colors"
+            className="font-semibold text-xs sm:text-sm text-black mt-4 inline-block border-b-2 border-[#278dcd] pb-0.5 hover:text-[#278dcd] transition-colors"
           >
             Learn about lives changed
           </a>
