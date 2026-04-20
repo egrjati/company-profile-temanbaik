@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 
 const links = [
-  { label: "Tentang Kami", href: "#" },
+  { label: "Tentang Kami", href: "/about" },
   { label: "Program",      href: "#" },
   { label: "Berita",       href: "/news" },
-  { label: "Galeri",       href: "#" },
+  { label: "Galeri",       href: "/gallery" },
 ];
 
 export default function Navbar() {
