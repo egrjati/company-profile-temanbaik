@@ -6,15 +6,10 @@ type NavChild = { label: string; href: string };
 type NavLink = { label: string; href?: string; children?: NavChild[] };
 
 const links: NavLink[] = [
-  {
-    label: "Tentang Kami",
-    children: [
-      { label: "Visi & Misi", href: "/about/visi-misi" },
-    ],
-  },
-  { label: "Program",  href: "#" },
-  { label: "Berita",   href: "/news" },
-  { label: "Galeri",   href: "#" },
+  { label: "Tentang Kami", href: "/about" },
+  { label: "Program",      href: "/program" },
+  { label: "Berita",       href: "/news" },
+  { label: "Galeri",       href: "/gallery" },
 ];
 
 export default function Navbar() {
@@ -134,7 +129,7 @@ export default function Navbar() {
           )}
 
           <a
-            href="#"
+            href="https://temanbaik.id/"
             className="py-2 px-5 bg-[#213F9A] hover:bg-[#1a3280] text-white text-sm font-semibold rounded-full shadow-sm hover:shadow-md hover:scale-105 active:scale-95 transition-all duration-200"
           >
             Donasi

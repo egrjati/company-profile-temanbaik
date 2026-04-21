@@ -51,9 +51,9 @@ export default function Footer() {
       </div>
 
       {/* kotak kedua */}
-      <div className="w-full h-75 md:h-150 bg-[#278dcd] px-4 sm:px-10 lg:px-14"></div>
+      <div className="w-full h-75 md:h-150 bg-[#213f9a] px-4 sm:px-10 lg:px-14"></div>
       {/* kotak ketiga */}
-      <div className="w-full bg-[#33abf6] px-4 sm:px-10 lg:px-32 py-4 md:h-14 md:py-0 text-white flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0">
+      <div className="w-full bg-[#01a6e0] px-4 sm:px-10 lg:px-32 py-4 md:h-14 md:py-0 text-white flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0">
         <p>© 2017 - 2020 Teman Baik. All rights reserved</p>
 
         {/* sosmed facebook youtube instagram */}

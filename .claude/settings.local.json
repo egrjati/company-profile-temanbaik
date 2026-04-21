@@ -5,7 +5,11 @@
       "Bash(ngrok version *)",
       "Bash(npx localtunnel *)",
       "Bash(netstat -ano)",
-      "Bash(cmd.exe /c \"taskkill /PID 14760 /F\")"
+      "Bash(cmd.exe /c \"taskkill /PID 14760 /F\")",
+      "Bash(npm install *)",
+      "Bash(git add *)",
+      "Bash(npm run *)",
+      "Bash(taskkill /PID 14776 /F)"
     ]
   }
 }

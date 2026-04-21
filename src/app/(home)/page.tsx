@@ -1,11 +1,17 @@
 import BerbagiMengubahKehidupan from "@/components/ui/hightlight-program";
-import HeroHeader from "@/components/ui/hero-header";
+import ScrollIndicator from "@/components/ui/scroll-indicator";
+import HeroSlider from "@/components/ui/hero-slider";
 
 export default function HomePage() {
   return (
     <section className="min-h-screen bg-white flex flex-col overflow-x-hidden">
       {/* Header */}
-      <HeroHeader />
+      <header className="w-full h-150 bg-black relative">
+        <HeroSlider />
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
+          <ScrollIndicator />
+        </div>
+      </header>
 
       {/* Main Content */}
       <main>
