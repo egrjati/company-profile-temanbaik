@@ -22,9 +22,260 @@ export default function HomePage() {
         {/* hightlight Program */}
         <BerbagiMengubahKehidupan />
 
-        {/* Benner */}
-        <div className="w-full h-125 bg-[#213F9A] flex items-center justify-center p-4 mt-10">
-          <p className="text-white font-bold text-lg">Benner</p>
+        {/* Transparansi */}
+        <div className="w-full flex flex-col items-center justify-center py-16 px-6 mt-10 relative overflow-hidden bg-white">
+          {/* Swirl kiri */}
+          <svg
+            className="absolute left-0 top-0 h-full w-auto opacity-80"
+            viewBox="0 0 300 600"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMinYMid meet"
+          >
+            <path
+              d="M-20 80 C 40 100, 120 60, 140 160 C 160 260, 60 300, 80 400 C 100 480, 180 460, 160 560"
+              stroke="#02A6E0"
+              strokeWidth="1.8"
+              fill="none"
+              strokeLinecap="round"
+            />
+            <path
+              d="M-40 120 C 30 140, 100 90, 130 200 C 155 290, 50 330, 70 430 C 90 510, 170 490, 150 580"
+              stroke="#213F9A"
+              strokeWidth="1.4"
+              fill="none"
+              strokeLinecap="round"
+              opacity="0.5"
+            />
+            <path
+              d="M-10 200 C 60 210, 150 170, 160 270 C 170 360, 80 380, 100 460 C 120 530, 190 520, 175 610"
+              stroke="#02A6E0"
+              strokeWidth="1.2"
+              fill="none"
+              strokeLinecap="round"
+              opacity="0.4"
+            />
+          </svg>
+
+          {/* Swirl kanan */}
+          <svg
+            className="absolute right-0 top-0 h-full w-auto opacity-80"
+            viewBox="0 0 300 600"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMaxYMid meet"
+          >
+            <path
+              d="M320 40 C 250 70, 180 40, 160 140 C 140 230, 230 270, 210 370 C 190 450, 110 440, 130 540"
+              stroke="#213F9A"
+              strokeWidth="1.8"
+              fill="none"
+              strokeLinecap="round"
+            />
+            <path
+              d="M340 90 C 265 115, 190 80, 175 175 C 158 270, 245 305, 225 400 C 205 475, 125 465, 148 558"
+              stroke="#02A6E0"
+              strokeWidth="1.4"
+              fill="none"
+              strokeLinecap="round"
+              opacity="0.5"
+            />
+            <path
+              d="M310 180 C 245 195, 170 160, 158 255 C 145 345, 235 365, 215 445 C 197 515, 120 510, 140 598"
+              stroke="#213F9A"
+              strokeWidth="1.2"
+              fill="none"
+              strokeLinecap="round"
+              opacity="0.4"
+            />
+          </svg>
+
+          {/* Header */}
+          <div className="text-center mb-12 z-10">
+            <p className="text-[#02A6E0] text-[10px] uppercase tracking-[0.5em] font-semibold mb-3">
+              Laporan Kami
+            </p>
+            <h2 className="text-[#213F9A] font-bold text-2xl md:text-3xl tracking-wide">
+              Transparansi
+            </h2>
+            <div className="mt-4 mx-auto w-8 h-[2px] rounded-full bg-[#02A6E0]/40" />
+          </div>
+
+          {/* Stats Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-3xl z-10">
+            {/* Card 1 - Penerima Manfaat */}
+            <div
+              className="group relative rounded-2xl px-8 py-10 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1"
+              style={{
+                background: "rgba(255,255,255,0.75)",
+                backdropFilter: "blur(16px)",
+                WebkitBackdropFilter: "blur(16px)",
+                border: "1px solid rgba(2, 166, 224, 0.2)",
+                boxShadow:
+                  "0 4px 24px rgba(2,166,224,0.08), inset 0 1px 0 rgba(255,255,255,0.9)",
+              }}
+            >
+              <div
+                className="w-11 h-11 rounded-xl flex items-center justify-center mb-5"
+                style={{
+                  background: "rgba(2,166,224,0.08)",
+                  border: "1px solid rgba(2,166,224,0.2)",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5"
+                  style={{ color: "#02A6E0" }}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 20h5v-2a4 4 0 00-5-3.87M9 20H4v-2a4 4 0 015-3.87m6 5.87H9m3-10a4 4 0 100-8 4 4 0 000 8z"
+                  />
+                </svg>
+              </div>
+              <p
+                className="font-extrabold text-4xl tracking-tight leading-none"
+                style={{ color: "#213F9A" }}
+              >
+                1,2 Jt+
+              </p>
+              <div
+                className="my-3 w-5 h-px"
+                style={{ background: "rgba(2,166,224,0.3)" }}
+              />
+              <p
+                className="text-[10px] font-semibold uppercase tracking-[0.2em]"
+                style={{ color: "#02A6E0" }}
+              >
+                Penerima Manfaat
+              </p>
+            </div>
+
+            {/* Card 2 - Total Donatur */}
+            <div
+              className="group relative rounded-2xl px-8 py-10 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1"
+              style={{
+                background: "rgba(255,255,255,0.90)",
+                backdropFilter: "blur(20px)",
+                WebkitBackdropFilter: "blur(20px)",
+                border: "1px solid rgba(33, 63, 154, 0.2)",
+                boxShadow:
+                  "0 8px 32px rgba(33,63,154,0.10), inset 0 1px 0 rgba(255,255,255,1)",
+              }}
+            >
+              <div
+                className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-px"
+                style={{
+                  background:
+                    "linear-gradient(90deg, transparent, rgba(2,166,224,0.5), transparent)",
+                }}
+              />
+              <div
+                className="w-11 h-11 rounded-xl flex items-center justify-center mb-5"
+                style={{
+                  background: "rgba(33,63,154,0.08)",
+                  border: "1px solid rgba(33,63,154,0.2)",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5"
+                  style={{ color: "#213F9A" }}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 010-6.364z"
+                  />
+                </svg>
+              </div>
+              <p
+                className="font-extrabold text-4xl tracking-tight leading-none"
+                style={{ color: "#213F9A" }}
+              >
+                500 Rb+
+              </p>
+              <div
+                className="my-3 w-5 h-px"
+                style={{ background: "rgba(33,63,154,0.3)" }}
+              />
+              <p
+                className="text-[10px] font-semibold uppercase tracking-[0.2em]"
+                style={{ color: "#213F9A" }}
+              >
+                Total Donatur
+              </p>
+            </div>
+
+            {/* Card 3 - Donasi Disalurkan */}
+            <div
+              className="group relative rounded-2xl px-8 py-10 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1"
+              style={{
+                background: "rgba(255,255,255,0.75)",
+                backdropFilter: "blur(16px)",
+                WebkitBackdropFilter: "blur(16px)",
+                border: "1px solid rgba(2, 166, 224, 0.2)",
+                boxShadow:
+                  "0 4px 24px rgba(2,166,224,0.08), inset 0 1px 0 rgba(255,255,255,0.9)",
+              }}
+            >
+              <div
+                className="w-11 h-11 rounded-xl flex items-center justify-center mb-5"
+                style={{
+                  background: "rgba(2,166,224,0.08)",
+                  border: "1px solid rgba(2,166,224,0.2)",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-5 h-5"
+                  style={{ color: "#02A6E0" }}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <p
+                className="font-extrabold text-4xl tracking-tight leading-none"
+                style={{ color: "#213F9A" }}
+              >
+                Rp 98 M+
+              </p>
+              <div
+                className="my-3 w-5 h-px"
+                style={{ background: "rgba(2,166,224,0.3)" }}
+              />
+              <p
+                className="text-[10px] font-semibold uppercase tracking-[0.2em]"
+                style={{ color: "#02A6E0" }}
+              >
+                Donasi Disalurkan
+              </p>
+            </div>
+          </div>
+
+          {/* Footer note */}
+          <p
+            className="text-[10px] mt-10 z-10 text-slate-600 tracking-widest uppercase"
+          >
+            * Data diperbarui secara berkala
+          </p>
         </div>
 
         {/* Mitra */}
