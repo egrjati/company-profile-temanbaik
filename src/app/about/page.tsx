@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const tabs = ["Visi & Misi", "Sejarah", "Budaya Kerja", "Arti Logo"] as const;
+const tabs = ["Visi & Misi", "Sejarah", "Budaya Kerja", "Legalitas"] as const;
 type Tab = (typeof tabs)[number];
 
 function TabContent({ tab }: { tab: Tab }) {
