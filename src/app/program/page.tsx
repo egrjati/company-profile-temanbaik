@@ -117,7 +117,7 @@ export default function ProgramPage() {
       </section>
 
       {/* Alternating Program Rows */}
-      <div id="program-list" className="bg-[#f0ebe2] py-10 space-y-20">
+      <div id="program-list" className="bg-[#f0ebe2] py-10 space-y-20"> 
         {programs.map((program, index) => (
           <ProgramRow
             key={program.title}
