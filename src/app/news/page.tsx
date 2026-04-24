@@ -148,7 +148,7 @@ function ArrowButton({ small = false }: { small?: boolean }) {
   );
 }
 
-// ── Kartu hero (full width, landscape) ──────────────────────────────────────
+// ── Kartu hero (full width, landscape)
 function HeroCard({ article }: { article: Article }) {
   return (
     <div className="flex flex-col md:flex-row rounded-2xl overflow-hidden border border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white cursor-pointer group">
