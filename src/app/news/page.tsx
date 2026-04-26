@@ -138,12 +138,25 @@ function CategoryBadge({ label }: { label: string }) {
 }
 
 function ArrowButton({ small = false }: { small?: boolean }) {
-  const size = small ? "w-6 h-6 text-sm" : "w-8 h-8 text-lg";
+  const size = small ? "w-6 h-6" : "w-8 h-8";
+  const iconSize = small ? "w-3 h-3" : "w-3.5 h-3.5";
   return (
     <button
-      className={`${size} rounded-full bg-[#278dcd] text-white flex items-center justify-center leading-none hover:bg-[#1e7ab8] transition-colors flex-shrink-0`}
+      type="button"
+      aria-label="Baca selengkapnya"
+      className={`${size} inline-flex items-center justify-center rounded-full bg-[#278dcd] text-white hover:bg-[#1e7ab8] transition-colors flex-shrink-0`}
     >
-      ›
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2.4}
+        className={`${iconSize} translate-x-[0.5px]`}
+        aria-hidden="true"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="m9 6 6 6-6 6" />
+      </svg>
     </button>
   );
 }
